@@ -1,5 +1,6 @@
 package ru.below.bankservices.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,6 +14,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Schema(description = "Сущность Банковский аккаунт")
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
