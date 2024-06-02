@@ -7,6 +7,7 @@ import ru.below.bankservices.dto.AccountDTO;
 import ru.below.bankservices.dto.UserDTO;
 import ru.below.bankservices.entity.Account;
 import ru.below.bankservices.service.AccountService;
+import ru.below.bankservices.service.impl.AccountServiceImpl;
 
 import java.math.BigDecimal;
 
@@ -14,7 +15,7 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 @RequestMapping("/account")
 public class AccountController {
-    private final AccountService accountService;
+    private final AccountServiceImpl accountService;
     @GetMapping("/{userId}")
     public Account getAccount(@PathVariable Long userId) {
         return accountService.getAccount(userId);
