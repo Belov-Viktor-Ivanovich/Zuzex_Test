@@ -3,7 +3,6 @@
 1. **Установка и запуск apache kafka:**
 
    - Установите Java Development Kit (JDK) на ваш компьютер. Убедитесь, что переменная среды JAVA_HOME установлена правильно.
-   - Скачайте и распакуйте Apache Kafka с официального сайта: ссылка.
    - Скачайте и распакуйте Apache Kafka с официального сайта: [ссылка](https://kafka.apache.org/downloads).
    - Запустите ZooKeeper, запустив скрипт .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties.
    - Запустите Kafka, запустив скрипт .\bin\windows\kafka-server-start.bat .\config\server.properties.
